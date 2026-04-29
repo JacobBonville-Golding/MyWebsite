@@ -1,0 +1,174 @@
+
+@media (min-width: 43.75em){
+    .site-navigation ul {
+        display: flex;
+        top: 0;
+    }
+}
+body {
+    background-color: #F7C59F;
+    font-family: "Audiowide", sans-serif;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;  
+}
+
+.website-header {
+    font-size: 25px;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-evenly;
+    border: groove; 
+    border-width: 10px;
+    border-radius: 80%;
+    border-color: #2C1A1D;
+    cursor: crosshair;
+}
+
+.site-navigation ul {
+    display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0 -5;
+    width: 55rem;
+	top: 4.5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.site-navigation a {
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration: #2C1A1D;
+    gap: 10px;
+}
+
+a,
+a:visited { 
+	color: #2C1A1D;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+
+.h1, h2, h3{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 50px;
+    font-size: 50px;
+    color: #2C1A1D;
+    
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: #000000;
+    margin-top: -40px;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.lorem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding-bottom: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.container-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.chib {
+    display: flex;
+    order: 0;
+    padding: 15px;
+    border: dashed;
+}
+
+.chip-p {
+    display: flex;
+    order: 1;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.steban {
+    display:flex;
+    order: 1;
+    border: dashed;
+    padding: 15px;
+}
+
+.steban-p {
+    display: flex;
+    order: 0;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.porg {
+    display: flex;
+    order: 0;
+    padding: 15px;
+    border: dashed;
+    max-width: 50%;
+}
