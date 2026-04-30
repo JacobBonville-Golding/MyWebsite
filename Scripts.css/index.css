@@ -16,11 +16,12 @@ body {
 
 .site-navigation {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
     border: groove; 
     border-width: 10px;
-    border-radius: 80%;
+    border-radius: 20px;
     border-color: #2C1A1D;
+    padding: 10px;
     
 }
 
@@ -39,7 +40,7 @@ body {
     font-size: 18px;
     text-decoration: none;
     text-decoration: #2C1A1D;
-    gap: 10px;
+    padding: 10px;
 }
 
 a,
@@ -63,7 +64,7 @@ a:focus {
     text-align: center;
     text-decoration: underline;
     padding-top: 50px;
-    font-size: 50px;
+    font-size: clamp(24px, 5vw, 50px); /* AI said this makes fluid and not blocky like i had it before*/
     color: #2C1A1D;
     
 }
@@ -71,9 +72,9 @@ a:focus {
 h4 {
     text-align: center;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: clamp(18px, 4vw, 30px);
     color: #000000;
-    margin-top: -40px;
+    margin-top: 10px;
 }
 
 .intro{
@@ -170,30 +171,28 @@ h4 {
     padding: 15px;
 }
 
-@media (max-width: 30rem){
-    .site-navigation ul {
-        display: flex;
-        top: 0;
-    }
-.container {
-    display: flex;
-    flex-direction: row;
+@media (max-width: 48rem){
     
-}
+    /* Had a miserable time trying to work out repsponsiveness
+    and I know i didnt code the containers the best and forgot that with
+    my layout i was trying doesnt work side by side and that took a long time to realize
+    so AI suggested going from row to column and after seeing that i knew what
+    it should look like */
+body {
+    margin: 10px; /* Maximize screen space on mobile */
+  }
 
-.container-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .site-navigation ul {
+    flex-direction: column; /* Stacks menu items vertically */
     align-items: center;
-    padding: 15px;
-    
-}
+    gap: 10px;
+  }
 
-.container-3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+  .container, .container-2, .container-3 { 
+    flex-direction: column; /* Stacks side-by-side content vertically */
+  }
+  
+  .chib, .steban, .porg, .chip-p, .steban-p, .porg-p {
+    order: unset !important; 
+  }
 }
