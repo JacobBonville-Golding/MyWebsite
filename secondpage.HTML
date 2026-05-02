@@ -28,3 +28,50 @@
 
 </body> 
 </html>
+
+html
+/* back to top button coding*/
+
+<div>
+            <button id="btnScrollToTop">
+                <img src="Images/top-arrow-circle-svgrepo-com.png" alt="scrollToTop">
+            </button>
+        </div>
+
+        javascript
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function() {
+  // This moves the page back to the very top
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+});
+
+css
+/* Also wanted to note while doing this re-learning/full understanding that targetting ID's you use #--- in css verses classes with (.---)*/
+#btnScrollToTop {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 50px;       /* Set fixed width */
+  height: 50px;      /* Set fixed height */
+  padding: 0;        /* Remove default button padding */
+  border: none;
+  background: none;  /* Makes the button background invisible */
+  cursor: pointer;
+  z-index: 1000;     /* Keeps it on top of other elements */
+}
+/*Above and below i was following with this video https://www.youtube.com/watch?v=FK5DEa1Hvco for a back to top button but i wanted to use a custom button i found
+online so when i was having trouble with the button size i asked Ai how to fix it, so the size was fixed and it told me i had my img in the headder so i moved
+that to the button itself when i realized. i like the comments it leave so when i look back or want to recreate i can see what is doing what, most of it i know
+but the reminder is nice*/
+
+/* This styles the image inside the button */
+#btnScrollToTop img {
+  width: 100%;       /* Makes image match button width */
+  height: 100%;      /* Makes image match button height */
+  display: block;
+}
